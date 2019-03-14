@@ -1,5 +1,5 @@
-TypeScript React Hello World Demo
-=================================
+TypeScript React Render Function Component Manually Demo
+========================================================
 
 ```
 npm install
