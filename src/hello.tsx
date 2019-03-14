@@ -1,8 +1,14 @@
 //import * as React from 'react'
-import React from 'react'
+import React, {useState} from 'react'
 
-export default function Hello(): JSX.Element {
+type Props = {
+  initCount: number
+}
+
+export default function Hello(props: Props): JSX.Element {
+  const [count, setCount] = useState(props.initCount)
   return <div>
-    <h1>Hello React</h1>
+    <div>Count: {count}</div>
+    <button onClick={_ => setCount(count + 1)}>Increase</button>
   </div>
 };
